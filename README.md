@@ -45,6 +45,9 @@ Below is a visualization to illustrate this using seaborns barplot
 
 ![realestate](./images/most_correlated.png)
 
+
+
+
 The model performance is at approximately 49%, similar to the validation score that is about  49% too. This can only predict the house price up to 50%.We have to look for another approach to see whether our model performance improves
 
 ### The second model is built using all the numeric features
