@@ -40,21 +40,36 @@ This section indicates the correlation between each variable and  the price effe
 
 ## Modeling
 ### The Baseline Model is generated from the most corelated feature to the price
+
 Below is a visualization to illustrate this using seaborns barplot
+
 ![realestate](./images/most_correlated.png)
+
 The model performance is at approximately 49%, similar to the validation score that is about  49% too. This can only predict the house price up to 50%.We have to look for another approach to see whether our model performance improves
+
 ### The second model is built using all the numeric features
+
 Below is a visualization of all the matplotlib's scatter plot
+
 ![realestate](./images/numeric_scatter.png)
+
 This second model got much better scores on both the training data and the validation data. The performances for the training and testing data are still quite low 64% and 65% respectively ie less than 70%. I will try a third model to see whether our perfomances improve further
+
 ### Investigate for multicollinearity using StatsModels to fit and evaluate a linear regression model on the features used in our second model
+
 From the above summary,it is noted that the features don't exhibit multicollinearity.Also checking on the on the p-values we see that all our features are statistically significant since all of them have a p-value (P>|t|) of less than 0.05.I therefore don't drop any of the features.
+
 ### Selecting Features with sklearn.feature_selection
+
 From the algorithm we see that all our features' coefficients are selected as important. We therefore go ahead to build and evaluate our final model.We will continue using our X_train_final data
+
 ### Build and Evaluate a Final Predictive Model
+
 From our model we get an R-squared score of 64%. We then convert this to Root mean squared error for readability for our stakeholders
 and we find out that RMSE is 216596.78. This means that for an average price of a house unit, this algorithm will be off by about $ 216596.78 
+
 # Interpreting the Final Model
+
 According to our model, the base price for a house in King County (the model intercept) is about $ 6672793.67
 The price of a house unit however flactuates with change in below factors. 
 
@@ -121,24 +136,39 @@ The price of a house unit however flactuates with change in below factors.
 </table>
 
 Before assuming that these coefficients give us inferential insight into past pricing decisions, we should investigate each of the assumptions of linear regression, in order to understand how much our model violates them.
+
 ### Investigating Linearity
+
 check whether the linearity assumption holds by plotting the actual price values against the predicted price values
 ![realestate](./images/linearity.png)
+
 We have some outliers, but in general it looks like we have a linear relationship between the actual price and the predicted price (not violating this assumption)
+
 ### Investigating Normality
+
 Check whether the normality assumption holds for our model by plotting a distribution curve of the residuals using QQ-plot
+
 ![realestate](./images/normality.png)
+
 We can notice some outliers, but we can say that the data is relatively normal
+
 ### Investigating Multicollinearity (Independence Assumption)
+
 We measure multicollinearity with variance inflation factor. A "rule of thumb" for VIF is that 5 is too high (i.e. strong multicollinearity).
 All the features except sqft_lot, waterfront have their variance Inflation factor way above 5. We therefore a very high multicollinearity in our features.
+
 ### Investigating Homoscedasticity
+
 check whether the model's minimized errors are indeed homoscedastic or if they violate this principle and display heteroscedasticity by plotting predictions against the residuals
+
 ![realestate](./images/homoscedasticity.png)
+
 The plot forms a close to perfect funnel shape, around the residual and prediction values, hence obeying the homoscedacity assumption
 
 ### Linear Regression Assumptions Conclusion
+
 We can be confident in our model coefficients since the only assumption being violeted is multicollinearity, which sometimes in actual sense each feature could be having an effect on the house price in King County. We can use this model for both inferential and predictive purposes.
+
 ### Conclusion
 
 The variables that will affect the price change of each house unit in Northwestern county are the number of bedrooms, number of bathrooms, sqft_living, floors, waterfront, condition, grade, yr_built  with an RMSE(Root Mean Squared Error) value of $ 216596.78. From final model interpretation,we see that 
@@ -157,4 +187,4 @@ Older houses and number of bedrooms have a negative change in price. While numbe
 5. Home owners should also seek to change the real estate grading of their houses if possible since an upward change in the grade of the house increases the house price by $ 127477.48
 
 ## For More Information
-See full full analysis in <a id ="student.ipynb">student.ipynb</a> or my presentation <a id ="presentation.pdf">here</a>
+See full full analysis in <a href ="student.ipynb">student.ipynb</a> or my presentation <a href ="presentation.pdf">here</a>
