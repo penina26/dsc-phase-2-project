@@ -74,7 +74,7 @@ and we find out that RMSE is 216596.78. This means that for an average price of 
 # Interpreting the Final Model
 
 According to our model, the base price for a house in King County (the model intercept) is about $ 6672793.67
-The price of a house unit however flactuates with change in below factors. 
+The price of a house unit however fluctuates with change in below factors. 
 
 <table>
 <tr>
@@ -190,7 +190,7 @@ Older houses and number of bedrooms have a negative change in price. While numbe
 5. Home owners should also seek to change the real estate grading of their houses if possible since an upward change in the grade of the house increases the house price by $ 127477.48
 
 ## For More Information
-See full full analysis in <a href ="student.ipynb">student.ipynb</a> or my presentation <a href ="presentation.pdf">here</a>
+See full analysis in <a href ="student.ipynb">student.ipynb</a> or my presentation <a href ="presentation.pdf">here</a>
 
 
 # Repository Structure
