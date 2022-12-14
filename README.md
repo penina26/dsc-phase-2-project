@@ -195,8 +195,8 @@ See full full analysis in <a href ="student.ipynb">student.ipynb</a> or my prese
 
 # Repository Structure
 
-├── data
-├── images
-├── README.md
-├── Presentation.pdf
+├── data<br>
+├── images<br>
+├── README.md<br>
+├── Presentation.pdf<br>
 └── student.ipynb
