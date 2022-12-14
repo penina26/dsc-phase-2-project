@@ -149,7 +149,7 @@ We have some outliers, but in general it looks like we have a linear relationshi
 
 ### Investigating Normality
 
-Check whether the normality assumption holds for our model by plotting a distribution curve of the residuals using QQ-plot
+check whether the normality assumption holds for our model by plotting a distribution curve of the residuals using seaborns distplot
 
 ![realestate](./images/normality.png)
 
