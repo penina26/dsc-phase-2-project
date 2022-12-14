@@ -191,3 +191,12 @@ Older houses and number of bedrooms have a negative change in price. While numbe
 
 ## For More Information
 See full full analysis in <a href ="student.ipynb">student.ipynb</a> or my presentation <a href ="presentation.pdf">here</a>
+
+
+# Repository Structure
+
+├── data
+├── images
+├── README.md
+├── Presentation.pdf
+└── student.ipynb
