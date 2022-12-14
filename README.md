@@ -35,13 +35,13 @@ The features to focus on are as below as they are theones that determine the hou
 The dataset has a total of  21,597 observations with 20 columns to analyze. But some of its variables may not be in accordance with the main features highlighed in the data understanding section. We will therefore drop columns such as views, qft_above, sqft_basement, yr_renovated, zipcode, lat, long, sqft_living15, sqft_lot15 because these variables do not have much effect on the house pricing in Kings County.
 
 ## Data Exploration
-This section indicates the correlation between each variable and  the price effected as shown below by the correlation as shown in the figure below.
+This section indicates the correlation between each variable and  the price  as shown below by the correlation as shown in the figure below.
 ![realestate](./images/heatmap.png)
 
 ## Modeling
 ### The Baseline Model is generated from the most corelated feature to the price
 
-Below is a visualization to illustrate this using seaborns barplot
+Below is a visualization to illustrate this using a scatter plot
 
 ![realestate](./images/most_correlated.png)
 
