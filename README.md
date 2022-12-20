@@ -1,5 +1,5 @@
 <div style="text-align: center;">
-    <h1>Analysis of House Sales in a Northwestern County</h1>
+    <h1>Analysis of House Sales in Northwestern County</h1>
     <img src="./images/housing.png" style="width: 80%">    
 </div>
 
